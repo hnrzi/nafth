@@ -3,8 +3,6 @@ layout: default
 ---
 
 
-<div dir="rtl">
-
 # فهرست واژگان
 
 <details>
@@ -27,5 +25,3 @@ layout: default
 **معنی:** سوق دهنده، محرک 
 **مثال:** بسائقه شور و عشق
 </details>
-
-</div>
