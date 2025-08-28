@@ -1,9 +1,0 @@
-.site-title,
-.site-description {
-  display: none; /* hides the theme title and subtitle */
-}
-
-body {
-  direction: rtl;
-  text-align: right;
-}
