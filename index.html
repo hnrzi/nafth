@@ -1,74 +1,94 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لغات فارسی</title>
-    <style>
-        body {
-            direction: rtl;
-            text-align: right;
-            font-family: "Tahoma", "Vazir", "Arial", sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f8f9fa;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نفثة المصدور</title>
+<style>
+    body {
+        direction: rtl;
+        text-align: right;
+        font-family: "Tahoma", "Vazir", "Arial", sans-serif;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fdfdfd;
+        color: #333;
+        line-height: 1.5;
+    }
 
-        h1, h2, h3 {
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
-        }
+    h1 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
 
-        .word {
-            background-color: #e3f2fd;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
+    /* بلوک لغت */
+    details {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 8px 12px;
+        background-color: #e3f2fd;
+        cursor: pointer;
+    }
 
-        .meaning {
-            margin: 5px 0 10px 0;
-            padding: 5px 10px;
-            background-color: #fff9c4;
-            border-radius: 5px;
-        }
+    summary {
+        text-align: right; /* لغت راست‌چین */
+        font-size: 1.1em;
+        font-weight: bold;
+        outline: none;
+    }
 
-        .example {
-            margin: 5px 0 10px 20px;
-            font-style: italic;
-            color: #555;
-        }
+    .meaning, .example {
+        margin-top: 5px;
+        margin-right: 10px;
+        font-size: 0.95em;
+        padding: 5px;
+    }
 
-        hr {
-            border: none;
-            border-top: 1px solid #ccc;
-            margin: 20px 0;
-        }
-    </style>
+    .meaning {
+        background-color: #fff9c4;
+        border-radius: 4px;
+    }
+
+    .example {
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        font-style: italic;
+    }
+
+    .note {
+        text-align: center;
+        background-color: #ffe0b2;
+        padding: 15px 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 1.05em;
+    }
+</style>
 </head>
 <body>
 
-    <h1>فهرست واژگان</h1>
+<h1>نفثة المصدور</h1>
 
-    <div class="word">
-        <h2>لغت ۱</h2>
-        <div class="meaning">معنی این لغت</div>
-        <div class="example">مثال از کتاب: این جمله نمونه است.</div>
-    </div>
+<!-- بلوک لغات -->
+<details>
+  <summary>نفث</summary>
+  <div class="meaning">دم پلید، خلط</div>
+  <!-- <div class="example"></div> -->
+</details>
 
-    <div class="word">
-        <h2>لغت ۲</h2>
-        <div class="meaning">معنی لغت دوم</div>
-        <div class="example">مثال از کتاب: جمله نمونه دوم.</div>
-    </div>
+<details>
+  <summary>تصدیع</summary>
+  <div class="meaning">اذیت، دردسر</div>
+  <div class="example">خواستن عذر تصدیع خویش</div>
+</details>
 
-    <hr>
-
-    <p>می‌توانید همین قالب را کپی کنید و لغات بیشتری اضافه کنید.</p>
-
+<details>
+  <summary>سائقه</summary>
+  <div class="meaning">سوق دهنده، محرک</div>
+  <div class="example">بسائقه شور و عشق</div>
+</details>
 </body>
 </html>
-
