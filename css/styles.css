@@ -1,0 +1,29 @@
+:root{
+--bg:#fff;
+--text:#111;
+--muted:#666;
+--accent:#0b66ff;
+--tooltip-bg: #fff;
+--tooltip-border: #ddd;
+}
+html,body{height:100%;}
+body{
+margin:0; font-family: 'Noto Naskh Arabic', 'Vazirmatn', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:var(--text); background:var(--bg);
+line-height:1.9; direction:rtl; padding:1rem;
+}
+.site-header{
+display:flex; align-items:center; gap:1rem; justify-content:space-between; margin-bottom:1rem;
+}
+.controls { display:flex; gap:.5rem; align-items:center }
+#pageContent{ background:linear-gradient(180, rgba(0,0,0,0.02), transparent); padding:1.5rem; border-radius:8px; box-shadow:0 6px 20px rgba(0,0,0,0.04); }
+.page-content p{ margin:0 0 1rem 0; font-size:1.05rem; }
+.annot{ cursor:help; border-bottom:1px dashed var(--muted); padding:0 .125rem; }
+.annot:focus{outline:2px solid color-mix(in srgb, var(--accent) 20%, transparent);}
+/* Tooltip */
+#tooltip{ position:fixed; z-index:9999; max-width:36ch; padding:.6rem .8rem; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,0.15); display:none; background:var(--tooltip-bg); border:1px solid var(--tooltip-border); }
+#tooltip .title{ font-weight:700; margin-bottom:.25rem }
+#tooltip .body{ font-size:.95rem; color:var(--muted) }
+/* small screens */
+@media (max-width:700px){ #tooltip{ max-width:84vw; }
+.site-header{flex-direction:column;align-items:flex-start}
+}
